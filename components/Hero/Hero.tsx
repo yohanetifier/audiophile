@@ -14,9 +14,14 @@ const Hero = () => {
 					label="see product"
 				/>
 			</div>
-			<div className={styles.rightWrapper}>
-				<Image src={''} alt={''} />
-			</div>
+			{/* <div className={styles.rightWrapper}>
+				<Image
+					src="/images/image-gallery-3.jpg"
+					width={200}
+					height={200}
+					alt=""
+				/>
+			</div> */}
 		</div>
 	);
 };

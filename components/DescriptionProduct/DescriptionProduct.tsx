@@ -10,7 +10,7 @@ interface Props {
 
 const DescriptionProduct = ({ teaser, title, description, label }: Props) => {
 	return (
-		<div className={styles.mainWrapper}>
+		<div data-testid="wrapper" className={styles.mainWrapper}>
 			<p>{teaser}</p>
 			<h2>{title}</h2>
 			<p>{description}</p>
