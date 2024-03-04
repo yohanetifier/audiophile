@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-
+import styles from './DescriptionProduct.module.scss';
 interface Props {
 	teaser: string;
 	title: string;
@@ -10,7 +10,7 @@ interface Props {
 
 const DescriptionProduct = ({ teaser, title, description, label }: Props) => {
 	return (
-		<div>
+		<div className={styles.mainWrapper}>
 			<p>{teaser}</p>
 			<h2>{title}</h2>
 			<p>{description}</p>

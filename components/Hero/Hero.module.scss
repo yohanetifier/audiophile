@@ -1,10 +1,26 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .mainWrapper {
-	border: 1px solid #000;
+	// border: 1px solid red;
 	height: 729px;
 	width: 100vw;
 	position: relative;
-	right: 80px;
 	background-color: $secondaryColor;
+	z-index: 1;
+	border: 2px solid green;
+}
+
+.leftWrapper {
+	width: 50%;
+	height: 100%;
+	border: 2px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rightWrapper {
+	width: 50%;
+	border: 2px solid orange;
+	height: 100%;
 }

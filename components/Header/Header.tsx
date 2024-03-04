@@ -3,6 +3,7 @@ import CustomLink from '../CustomLink/CustomLink';
 import Logo from '../Logo/Logo';
 import styles from './Header.module.scss';
 import Cart from '../Cart/Cart';
+import CenterWrapper from '../CenterWrapper/CenterWrapper';
 
 const Header = () => {
 	const navigation = [
@@ -24,19 +25,21 @@ const Header = () => {
 		}
 	];
 	return (
-		<header data-testid="header" className={styles.mainWrapper}>
-			<div data-testid="wrapperLogo">
-				<Logo />
-			</div>
-			<div data-testid="wrapperRoute" className={styles.route}>
-				{navigation.map(({ title, href }, index) => (
-					<CustomLink key={index} label={title} href={href} />
-				))}
-			</div>
-			<div data-testid="wrapperSvgCart">
-				<Cart />
-			</div>
-		</header>
+		<CenterWrapper>
+			<header data-testid="header" className={styles.mainWrapper}>
+				<div data-testid="wrapperLogo">
+					<Logo />
+				</div>
+				<div data-testid="wrapperRoute" className={styles.route}>
+					{navigation.map(({ title, href }, index) => (
+						<CustomLink key={index} label={title} href={href} />
+					))}
+				</div>
+				<div data-testid="wrapperSvgCart">
+					<Cart />
+				</div>
+			</header>
+		</CenterWrapper>
 	);
 };
 
