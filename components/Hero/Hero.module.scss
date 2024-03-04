@@ -1,0 +1,10 @@
+@import '../../styles/main.scss';
+
+.mainWrapper {
+	border: 1px solid #000;
+	height: 729px;
+	width: 100vw;
+	position: relative;
+	right: 80px;
+	background-color: $secondaryColor;
+}
