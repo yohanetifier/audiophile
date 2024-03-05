@@ -1,7 +1,7 @@
 import React from 'react';
 import Categorie from '../Categorie/Categorie';
 import CenterWrapper from '../CenterWrapper/CenterWrapper';
-
+import styles from './CategoriesList.module.scss';
 interface Props {
 	categorie: [];
 }
@@ -9,14 +9,16 @@ interface Props {
 const CategoriesList = ({ categorie }: Props) => {
 	return (
 		<CenterWrapper>
-			{categorie.map(({ element, imageSrc, imageAlt }, index) => (
-				<Categorie
-					key={index}
-					categorie={element}
-					imageSrc={imageSrc}
-					imageAlt={imageAlt}
-				/>
-			))}
+			<div className={styles.mainWrapper}>
+				{categorie.map(({ categorie, imageSrc, imageAlt }, index) => (
+					<Categorie
+						key={index}
+						categorie={categorie}
+						imageSrc={imageSrc}
+						imageAlt={imageAlt}
+					/>
+				))}
+			</div>
 		</CenterWrapper>
 	);
 };

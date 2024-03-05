@@ -6,11 +6,7 @@ interface Props {
 }
 
 const CenterWrapper = ({ children }: Props) => {
-	return (
-		<div className={styles.wrapper}>
-			<div className={styles.subWrapper}>{children}</div>
-		</div>
-	);
+	return <div className={styles.wrapper}>{children}</div>;
 };
 
 export default CenterWrapper;
