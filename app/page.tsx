@@ -8,17 +8,17 @@ export default function Home() {
 	const categorie: Categories[] = [
 		{
 			categorie: 'Headphones',
-			imgSrc: '',
-			imgAlt: ''
+			imgSrc: '/images/image-category-thumbnail-headphones.png',
+			imgAlt: 'headphones'
 		},
 		{
 			categorie: 'speakers',
-			imgSrc: '',
+			imgSrc: '/images/image-category-thumbnail-speakers.png',
 			imgAlt: ''
 		},
 		{
 			categorie: 'earphones',
-			imgSrc: '',
+			imgSrc: '/images/image-category-thumbnail-earphones.png',
 			imgAlt: ''
 		}
 	];

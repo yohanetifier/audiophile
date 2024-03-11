@@ -10,17 +10,14 @@ interface Props {
 const Categorie = ({ categorie, imageSrc, imageAlt }: Props) => {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.mainWrapper}>
-				<div className={styles.img}>
-					<Image
-						src={imageSrc}
-						alt={imageAlt}
-						width={200}
-						height={200}
-					/>
+			<div className={styles.img}>
+				<Image src={imageSrc} alt={imageAlt} width={200} height={200} />
+			</div>
+			<div className={styles.details}>
+				<h2 className={styles.categorie}>{categorie}</h2>
+				<div>
+					<p className={styles.action}>shop</p>
 				</div>
-				<h2>{categorie}</h2>
-				<p>shop</p>
 			</div>
 		</div>
 	);

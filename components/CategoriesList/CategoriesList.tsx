@@ -2,20 +2,22 @@ import React from 'react';
 import Categorie from '../Categorie/Categorie';
 import CenterWrapper from '../CenterWrapper/CenterWrapper';
 import styles from './CategoriesList.module.scss';
+import { Categories } from '@/typings/categories';
+
 interface Props {
-	categorie: [];
+	categorie: Categories[];
 }
 
 const CategoriesList = ({ categorie }: Props) => {
 	return (
 		<CenterWrapper>
 			<div className={styles.mainWrapper}>
-				{categorie.map(({ categorie, imageSrc, imageAlt }, index) => (
+				{categorie.map(({ categorie, imgSrc, imgAlt }, index) => (
 					<Categorie
 						key={index}
 						categorie={categorie}
-						imageSrc={imageSrc}
-						imageAlt={imageAlt}
+						imageSrc={imgSrc}
+						imageAlt={imgAlt}
 					/>
 				))}
 			</div>
