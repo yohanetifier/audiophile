@@ -1,13 +1,13 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .link {
-    width: 160px;
-    height: 48px;
-    background-color: $fifthColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: $sixthColor;
-    font-family: var(--font-manrope);
+	width: 160px;
+	height: 48px;
+	background-color: $fifthColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: $sixthColor;
+	font-family: var(--font-manrope);
 }

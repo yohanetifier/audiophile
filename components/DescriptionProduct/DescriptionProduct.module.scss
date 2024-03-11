@@ -1,31 +1,31 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .mainWrapper {
-    width: 398px;
-    height: 346px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    p:first-child {
-        font-family: var(--font-manrope);
-        color: $sixthColor;
-        text-transform: uppercase;
-        font-size: 14px;
-        opacity: 0.5;
-        letter-spacing: 10px;
-    }
-    h2 {
-        text-transform: uppercase;
-        font-family: var(--font-manrope);
-        font-size: 56px;
-        font-weight: 700;
-        color: $sixthColor;
-    }
-    p:nth-child(3) {
-        font-family: var(--font-manrope);
-        font-size: 15px;
-        opacity: 0.75;
-        color: $sixthColor;
-        // margin-top: 20px;
-    }
+	width: 398px;
+	height: 346px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	p:first-child {
+		font-family: var(--font-manrope);
+		color: $sixthColor;
+		text-transform: uppercase;
+		font-size: 14px;
+		opacity: 0.5;
+		letter-spacing: 10px;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-family: var(--font-manrope);
+		font-size: 56px;
+		font-weight: 700;
+		color: $sixthColor;
+	}
+	p:nth-child(3) {
+		font-family: var(--font-manrope);
+		font-size: 15px;
+		opacity: 0.75;
+		color: $sixthColor;
+		// margin-top: 20px;
+	}
 }

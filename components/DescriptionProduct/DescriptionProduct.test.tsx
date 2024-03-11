@@ -27,7 +27,7 @@ describe('DescriptionProduct', () => {
 		const mainWrapper = getByTestId('wrapper');
 		const title = mainWrapper.querySelector('h2');
 		expect(title).toBeInTheDocument();
-		expect(title.textContent).toBe('Bose');
+		expect(title!.textContent).toBe('Bose');
 	});
 	it('should render a description', () => {
 		const { getByTestId } = render(<DescriptionProduct {...props} />);
