@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './Categorie.module.scss';
+import { MdArrowForwardIos } from 'react-icons/md';
+import ActionWithIcon from '../ActionWithIcon/ActionWithIcon';
 interface Props {
 	categorie: string;
 	imageSrc: string;
@@ -15,9 +17,11 @@ const Categorie = ({ categorie, imageSrc, imageAlt }: Props) => {
 			</div>
 			<div className={styles.details}>
 				<h2 className={styles.categorie}>{categorie}</h2>
-				<div>
+				{/* <div>
 					<p className={styles.action}>shop</p>
-				</div>
+					<MdArrowForwardIos />
+				</div> */}
+				<ActionWithIcon label="Shop" icon={<MdArrowForwardIos />} />
 			</div>
 		</div>
 	);

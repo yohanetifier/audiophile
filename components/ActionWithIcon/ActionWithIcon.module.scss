@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    svg {
+        color: $primaryColor;
+    }
+}
+
+.action {
+    text-transform: uppercase;
+    font-family: var(--font-manrope);
+    margin-right: 10px;
+}
